@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+
+}
+
+#messages {
+    overflow: auto; /* Permite rolar quando as mensagens ultrapassarem o espaço disponível */
+    height: 80vh;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: rgb(217, 233, 243);
+    border-radius: 20px;
+    margin: 0 auto; /* Centraliza o elemento */
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-msg {
+    display: flex;
+    width: auto;
+    gap: 20px;
+    padding: 6px;
+}
+
+.user-msg {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.msg p {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px 20px 10px;
+    width: auto; /* Ajusta a largura automaticamente de acordo com o conteúdo */
+    max-width: 70%; /* Limita a largura máxima a 70% do contêiner */
+    word-wrap: break-word; /* Quebra palavras longas */
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.692)
+}
+
+.horario-msg {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    bottom: 2px;
+    right: 2px;
+}
+
+
+#inputs {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#messageInput {
+    width: 80%;
+    padding: 10px;
+    
+}
+
+button {
+    width: 20%;
+    padding: 10px
+}
