@@ -8,7 +8,24 @@ Este projeto implementa um **chat em tempo real** usando **Express**, **TypeScri
 - **Socket.IO**: Comunicação em tempo real entre clientes.
 - **TypeScript**: Tipagem estática para maior segurança e robustez.
 - **Express**: Framework web rápido e eficiente para a API.
-- **Frontend Básico**: Utiliza apenas **HTML**, **CSS** e **JavaScript** para comunicação com a API e o servidor Socket.IO.
+- **Node.js**: Ambiente de execução para o backend.
+- **CORS**: Middleware para permitir requisições de origens diferentes.
+- **HTML, CSS e JavaScript**: Frontend básico para comunicação com a API e WebSocket.
 
+## Pré-requisitos
 
+- **Node.js** (versão 16 ou superior)
+- **npm** ou **yarn** (gerenciadores de pacotes)
 
+## Instalação
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/devmarcosantonio/ChatSocket.git
+cd ChatSocket
+cd back
+
+npm install
+npm run dev
+```
