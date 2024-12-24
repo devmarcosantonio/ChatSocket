@@ -19,13 +19,22 @@ Este projeto implementa um **chat em tempo real** usando **Express**, **TypeScri
 
 ## Instalação
 
-### 1. Clone o repositório
+### clone o repositório
 
 ```bash
 git clone https://github.com/devmarcosantonio/ChatSocket.git
 cd ChatSocket
-cd back
+```
 
+### Navegue até a pasta back
+```bash
+cd back
+```
+### Instale todas as depedências e rode a aplicação
+```bash
 npm install
 npm run dev
 ```
+
+### Sobre o frontend
+Como é um arquivo simples, basta abrir o arquivo index.html (já com servidor rodando)!
