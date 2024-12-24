@@ -1,4 +1,4 @@
-# Chat em Tempo Real com Fastify, TypeScript e Socket.IO
+# Chat em Tempo Real com Express, TypeScript e Socket.IO
 
 Este projeto implementa um **chat em tempo real** usando **Express**, **TypeScript** e **Socket.IO**. O backend oferece uma **API REST** para recuperar mensagens iniciais e permite comunicação em tempo real através de WebSockets. O frontend está sendo feito com **HTML**, **CSS** e **JavaScript**, em vez de **React**, para não perder a prática com o básico.
 
