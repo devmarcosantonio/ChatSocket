@@ -7,8 +7,6 @@ if( username_local) {
     username_init.value = username_local
 }
 
-
-
 async function atualizarMensagens () {
     const response = await fetch('http://localhost:3000/api/mensagens')
     const data = await response.json()

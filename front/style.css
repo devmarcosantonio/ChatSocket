@@ -10,7 +10,7 @@ header {
 
 
 .container {
-    width: 40%;
+    max-width: 600px;
     margin: auto;
     padding: 20px;
 
@@ -55,17 +55,17 @@ header {
     width: auto; /* Ajusta a largura automaticamente de acordo com o conteúdo */
     max-width: 70%; /* Limita a largura máxima a 70% do contêiner */
     word-wrap: break-word; /* Quebra palavras longas */
-    word-wrap: break-word;
+    white-space: pre-wrap; /* Mantém quebras de linha e espaços */
     background-color: rgba(255, 255, 255, 0.692)
 }
 
 .myMsg {
-   align-self: flex-end
+   align-self: flex-end;
 }
 
-.myMsg .user-msg {
+/* .myMsg .user-msg {
     display: none;
-}
+} */
 
 .horario-msg {
     position: absolute;
@@ -91,4 +91,41 @@ header {
 button {
     width: 20%;
     padding: 10px
+}
+
+
+/* Responsividade */
+@media (max-width: 1000px) {
+    .container {
+        width: 90%; /* Ajusta a largura para tablets */
+    }
+
+    #messages {
+        height: 70vh; /* Reduz a altura em telas menores */
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Ajusta a largura para tablets */
+    }
+
+    #messages {
+        height: 70vh; /* Reduz a altura em telas menores */
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 98%; /* Usa quase toda a largura disponível em celulares */
+        padding: 10px;
+    }
+
+    #messages {
+        height: 60vh;
+        padding: 10px;
+    }
 }
