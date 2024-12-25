@@ -10,7 +10,7 @@ header {
 
 
 .container {
-    width: 70%;
+    width: 40%;
     margin: auto;
     padding: 20px;
 
@@ -57,6 +57,14 @@ header {
     word-wrap: break-word; /* Quebra palavras longas */
     word-wrap: break-word;
     background-color: rgba(255, 255, 255, 0.692)
+}
+
+.myMsg {
+   align-self: flex-end
+}
+
+.myMsg .user-msg {
+    display: none;
 }
 
 .horario-msg {
