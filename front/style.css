@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .container {
     width: 70%;
@@ -34,7 +39,7 @@
     display: flex;
     width: auto;
     gap: 20px;
-    padding: 6px;
+    padding-left: 6px;
 }
 
 .user-msg {

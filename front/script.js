@@ -20,7 +20,7 @@ function criar_mensagem(mensagem) {
 
         const span1 = document.createElement('span')
         span1.classList = 'user-msg'
-        span1.textContent = mensagem.user_ID
+        span1.textContent = mensagem.username
 
         const span2 = document.createElement('span')
         span2.classList = 'horario-msg'
@@ -49,13 +49,18 @@ socket.on('novaMensagem', (mensagem) => {
 
 function sendMessage() {
     const input = document.getElementById('messageInput');
+    let username = document.getElementById('username').value
 
-    if (input.value.length === 0) {
+    if (input.value.length === 0 ) {
         alert('Campo vazio')
     } else{
+        if (username.length === 0) {
+            username = 'anônimo_'
+        }
         const time = new Date()
 
         const mensagem = {
+            username,
             msg:  input.value,
             time
         }

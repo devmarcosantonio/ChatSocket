@@ -19,6 +19,7 @@ io.on('connection', (socket) => {
 
   // Evento personalizado para mensagens
     socket.on('novaMensagem', (mensagem: {
+        username: string,
         msg: string,
         time: Date
     }) => {
@@ -32,11 +33,17 @@ io.on('connection', (socket) => {
     const horario = `${horas}:${minutos}`;
 
     const nova_mensagem = {
+        username: mensagem.username,
         msg: mensagem.msg,
         user_ID: socket.id,
         horario,
         date: mensagem.time
     }
+
+    if(nova_mensagem.username === 'anônimo_') {
+      nova_mensagem.username += socket.id.slice(0,5)
+    }
+    
     console.log('Nova mensagem:', mensagem);
     mensagens.push(nova_mensagem)
     io.emit('novaMensagem', nova_mensagem); // Reenvia para todos os clientes
